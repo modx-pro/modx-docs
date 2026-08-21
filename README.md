@@ -4,9 +4,17 @@ Skill для AI-агентов: документация extras MODX Revolution,
 
 Работает в **Cursor** и **Claude Code**.
 
+Репозиторий: [modx-pro/modx-docs](https://github.com/modx-pro/modx-docs).
+
 ## Установка
 
-Каноническая папка (этот репозиторий / копия):
+```bash
+npx skills add modx-pro/modx-docs
+```
+
+### Локальная разработка (symlink)
+
+Структура пакета:
 
 ```text
 modx-docs/
@@ -15,9 +23,7 @@ modx-docs/
 └── references/
 ```
 
-### Cursor
-
-Симлинк в личные skills:
+**Cursor:**
 
 ```bash
 ln -sfn /absolute/path/to/modx-docs ~/.cursor/skills/modx-docs
@@ -25,9 +31,7 @@ ln -sfn /absolute/path/to/modx-docs ~/.cursor/skills/modx-docs
 
 Cursor подхватывает skill по `description`, когда вы просите документировать компонент.
 
-### Claude Code
-
-Симлинк в личные skills:
+**Claude Code:**
 
 ```bash
 ln -sfn /absolute/path/to/modx-docs ~/.claude/skills/modx-docs
@@ -35,19 +39,7 @@ ln -sfn /absolute/path/to/modx-docs ~/.claude/skills/modx-docs
 
 Вызов: `/modx-docs` или описание задачи по документации. См. [Claude Code skills](https://code.claude.com/docs/en/skills).
 
-### Обе среды на одной машине
-
 Оба симлинка должны указывать на один канонический путь. Тогда правки применяются везде.
-
-### После публикации на GitHub
-
-Когда пакет на GitHub (раскладка совместима с skills.sh):
-
-```bash
-npx skills add <owner>/modx-docs
-```
-
-До публикации используйте симлинки выше.
 
 ## Примеры запросов
 
@@ -64,7 +56,3 @@ npx skills add <owner>/modx-docs
 ## Skill
 
 Подробности в [SKILL.md](./SKILL.md).
-
-## Лицензия
-
-При публикации пакета добавьте файл лицензии. Для локального использования он не нужен.
