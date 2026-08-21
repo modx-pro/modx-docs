@@ -1,7 +1,5 @@
 # modx-docs
 
-[![skills.sh][skills-src]][skills-href]
-
 **Официальный skill** экосистемы [modx-pro](https://github.com/modx-pro) для AI-агентов.
 
 Репозиторий: [https://github.com/modx-pro/modx-docs](https://github.com/modx-pro/modx-docs)
@@ -16,7 +14,6 @@
 | --- | --- |
 | GitHub | [modx-pro/modx-docs](https://github.com/modx-pro/modx-docs) |
 | Установка | `npx skills add modx-pro/modx-docs` |
-| Каталог skills.sh | [skills.sh/modx-pro/modx-docs](https://skills.sh/modx-pro/modx-docs) |
 | Сайт документации | [docs.modx.pro](https://docs.modx.pro) |
 | Issues / PR | [github.com/modx-pro/modx-docs](https://github.com/modx-pro/modx-docs/issues) |
 
@@ -37,7 +34,7 @@ cd modx-docs
 npx skills add modx-pro/modx-docs
 ```
 
-Команда ставит официальный skill из [modx-pro/modx-docs](https://github.com/modx-pro/modx-docs) (совместимо со [skills.sh](https://skills.sh)).
+Команда ставит официальный skill из [modx-pro/modx-docs](https://github.com/modx-pro/modx-docs).
 
 ### Локальная разработка (symlink)
 
@@ -83,6 +80,3 @@ ln -sfn /absolute/path/to/modx-docs ~/.claude/skills/modx-docs
 ## Skill
 
 Подробности в [SKILL.md](./SKILL.md).
-
-[skills-src]: https://skills.sh/b/modx-pro/modx-docs
-[skills-href]: https://skills.sh/modx-pro/modx-docs
